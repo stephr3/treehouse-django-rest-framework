@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from . import models
 
-class ReviewSerialize(serializers.ModelSerializer):
+class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
         extra_kwargs = {
             'email': {'write_only': True}
